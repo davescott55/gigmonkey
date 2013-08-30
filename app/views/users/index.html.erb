@@ -1,0 +1,21 @@
+<h1>Users Index Page View</h1>
+Required functionality:
+<ul>
+  <li>List all users</li>
+  <li>- Click to view user</li>
+  <li>- Click to edit user if superadmin</li>
+  <li>- Click to suspend user if superadmin</li>
+  <li>- Click to delete user if superadmin</li>
+</ul>
+
+<table border="1">
+<tr><th>Forename</th><th>Surname</th><th>Alias</th><th>Email</th><th>Password</th></tr>
+<% @users.each do |user| %>
+<tr><th><%= link_to user.forename, user %></th><th><%= user.surname %></th><th><%= user.alias %></th><th><%= user.email %></th><th><%= user.password %></th></tr>
+<% end %>
+<tr><th>Forename</th><th>Surname</th><th>Alias</th><th>Email</th><th>Password</th></tr>
+</table>
+
+<br />
+<h2>Find me in app/views/users/index.html.erb</h2>
+
