@@ -1,11 +1,10 @@
 class CreateGigs < ActiveRecord::Migration
   def change
     create_table :gigs do |t|
-      t.string :band
+      t.string :performing
       t.string :venue
-      t.string :alias
-      t.string :email
-      t.string :password
+      t.string :town
+      t.datetime :happens_on
       t.timestamps
     end
   end

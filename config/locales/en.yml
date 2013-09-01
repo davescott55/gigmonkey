@@ -2,4 +2,13 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  gigs: 
+    add-gig-link: "Add a new Gig"
+    dbfields: 
+       performer: "Performer"
+       venue: "Venue"
+       town: "Town"
+       happens_on: "Happens On"
+    add-form:
+       header: "Add a new Gig"
+       submit-label: "Add Gig"
